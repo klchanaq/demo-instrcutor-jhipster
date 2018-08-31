@@ -1,0 +1,39 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "instructor",
+            "otherEntityName": "instructor",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "reviews",
+            "otherEntityName": "review",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "course"
+        },
+        {
+            "relationshipName": "students",
+            "otherEntityName": "student",
+            "relationshipType": "many-to-many",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "courses"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180822042302",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "serviceClass",
+    "entityTableName": "course",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

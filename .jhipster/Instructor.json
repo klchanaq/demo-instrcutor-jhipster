@@ -1,0 +1,37 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "instructordetail",
+            "otherEntityName": "instructordetail",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "instructor"
+        },
+        {
+            "relationshipName": "courses",
+            "otherEntityName": "course",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "instructor"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180822041938",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "serviceClass",
+    "entityTableName": "instructor",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}
